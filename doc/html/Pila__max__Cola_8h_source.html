@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pila_max: Fichero Fuente include/Pila_max_Cola.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pila_max
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Pila_max_Cola.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file:   Pila_max_Cola.h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @author: Esther García Gallego</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Created on 6 de noviembre de 2020, 18:12</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PILA_MAX_COLA_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define PILA_MAX_COLA_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cola_8h.html">cola.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// ------------------------- Declaración del STRUCT ------------------------- //</span></div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structelemento.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structelemento.html">elemento</a>{</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structelemento.html#a954579dc7ed0033eefa875742ece867b">   15</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structelemento.html#a954579dc7ed0033eefa875742ece867b">ele</a>;                </div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structelemento.html#aefc00344a4cf9303417ccab8158bb803">   16</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structelemento.html#aefc00344a4cf9303417ccab8158bb803">maximo</a> = 0;       </div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;std::ostream &amp;operator&lt;&lt;(std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="structelemento.html">elemento</a>&amp; <a class="code" href="structelemento.html">elemento</a>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// -------------------------- Auxiliares para Struct ------------------------- //</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">bool</span> iguales(<span class="keyword">const</span> <a class="code" href="structelemento.html">elemento</a> &amp;uno, <span class="keyword">const</span> <a class="code" href="structelemento.html">elemento</a> &amp;otro);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">bool</span> elementoMenor(<span class="keyword">const</span> <a class="code" href="structelemento.html">elemento</a> &amp;uno, <span class="keyword">const</span> <a class="code" href="structelemento.html">elemento</a> &amp;otro);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// -------------------------- Funciones auxiliares --------------------------- //</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="structelemento.html">elemento</a> *vectorizar(<span class="keyword">const</span> <a class="code" href="classCola.html">Cola&lt;elemento&gt;</a> &amp;cola);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="classCola.html">Cola&lt;elemento&gt;</a> espejar(<span class="keyword">const</span> <a class="code" href="classCola.html">Cola&lt;elemento&gt;</a> &amp;cola);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classPila__max.html">   69</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPila__max.html">Pila_max</a> {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classCola.html">Cola&lt;elemento&gt;</a> cola;                   </div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    </div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// ----------------------- Constructores y Destructores ---------------------- //</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//No se necesitan porque ya están implementados en la clase Cola</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    </div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">// ---------------------------- Métodos del TDA ----------------------------- //</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> poner(<span class="keywordtype">int</span> num);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    </div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> quitar();</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    </div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="structelemento.html">elemento</a> tope();</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    </div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> vacia() <span class="keyword">const</span>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    </div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> num_elementos() <span class="keyword">const</span>;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">// ------------------------------- Operadores ------------------------------- //</span></div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    </div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classPila__max.html">Pila_max</a>&amp; otra) <span class="keyword">const</span>;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    </div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code" href="classPila__max.html">Pila_max</a>&amp; otra) <span class="keyword">const</span>;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PILA_MAX_COLA_H */</span><span class="preprocessor"></span></div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="ttc" id="classCola_html"><div class="ttname"><a href="classCola.html">Cola&lt; elemento &gt;</a></div></div>
+<div class="ttc" id="classPila__max_html"><div class="ttname"><a href="classPila__max.html">Pila_max</a></div><div class="ttdef"><b>Definition:</b> <a href="Pila__max__Cola_8h_source.html#l00069">Pila_max_Cola.h:69</a></div></div>
+<div class="ttc" id="structelemento_html"><div class="ttname"><a href="structelemento.html">elemento</a></div><div class="ttdef"><b>Definition:</b> <a href="Pila__max__Cola_8h_source.html#l00014">Pila_max_Cola.h:14</a></div></div>
+<div class="ttc" id="structelemento_html_a954579dc7ed0033eefa875742ece867b"><div class="ttname"><a href="structelemento.html#a954579dc7ed0033eefa875742ece867b">elemento::ele</a></div><div class="ttdeci">int ele</div><div class="ttdoc">Elemento a almacenar. </div><div class="ttdef"><b>Definition:</b> <a href="Pila__max__Cola_8h_source.html#l00015">Pila_max_Cola.h:15</a></div></div>
+<div class="ttc" id="structelemento_html_aefc00344a4cf9303417ccab8158bb803"><div class="ttname"><a href="structelemento.html#aefc00344a4cf9303417ccab8158bb803">elemento::maximo</a></div><div class="ttdeci">int maximo</div><div class="ttdoc">El máximo. </div><div class="ttdef"><b>Definition:</b> <a href="Pila__max__Cola_8h_source.html#l00016">Pila_max_Cola.h:16</a></div></div>
+<div class="ttc" id="cola_8h_html"><div class="ttname"><a href="cola_8h.html">cola.h</a></div><div class="ttdoc">Fichero cabecera del TDA Cola. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

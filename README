@@ -1,0 +1,32 @@
+18/11/2020
+Esther García Gallego.			
+Ingeniería Informática 2ºB.
+
+Para poder lanzar el proyecto, por favor escriba lo siguiente en la terminal (situándose dentro de la capeta Pila_max). 
+
+// -------------------------------------------------- //
+Si desea compilar pila_max_cola: 
+
+	#> make pila_max_cola 
+
+// -------------------------------------------------- //
+
+Si desea compilar pila_max_vd:
+
+	#> make pila_max_cola 
+
+// -------------------------------------------------- //
+
+Si desea visualizar la documentación:
+
+	#> make display_doxy
+
+// -------------------------------------------------- //
+
+Si desea eliminar los .o y los programas creados al compilar:
+
+	#> make clean
+
+// -------------------------------------------------- //
+
+
